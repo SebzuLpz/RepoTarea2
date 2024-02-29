@@ -19,7 +19,7 @@ void insertarNodo() {
     try {
     x = stoi(linea);
     } catch (invalid_argument& e) {
-    cout << "Error: Por favor ingrese un número entero." << endl;
+    cout << "Error: Por favor ingrese un numero entero." << endl;
     return;
     }
     
@@ -67,7 +67,7 @@ void editarNodo() {
     try {
         actual->dato = stoi(linea);
     } catch (invalid_argument& e) {
-        cout << "Error: Por favor ingrese un número entero." << endl;
+        cout << "Error: Por favor ingrese un numero entero." << endl;
         return;
     }
     } else {
@@ -90,7 +90,7 @@ void eliminarNodo() {
         cabeza = actual->siguiente;
         delete actual;
     } else {
-        cout << "Error: La lista está vacía." << endl;
+        cout << "Error: La lista esta vacia." << endl;
         return;
     }
     } else {
